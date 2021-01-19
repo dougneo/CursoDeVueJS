@@ -6,24 +6,29 @@
     text-align: center;
     text-align: -webkit-center;
 }
-#barra{
+
+#barra {
     padding: 20px 0;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
 }
-h3{
+
+h3 {
     padding-bottom: 5px;
 }
-#botoes{
+
+#botoes {
     padding: 20px 0;
 }
 
-.barra-de-progresso{
-	border: 1px solid black;
-	height: 20px;
-	width: 90%;
+.barra-de-progresso {
+    border: 1px solid black;
+    height: 20px;
+    width: 90%;
 }
-.progresso{
-	background-color: green;
-	height: 100%;
+
+.progresso {
+    background-color: green;
+    height: 100%;
+    float: left;
 }
