@@ -1,4 +1,29 @@
-div.container {
-    margin: 10px 0px;
+#barra,
+#botoes,
+#historico {
+    margin: 20px 0px;
     border: 1px solid red;
+    text-align: center;
+    text-align: -webkit-center;
+}
+#barra{
+    padding: 20px 0;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+}
+h3{
+    padding-bottom: 5px;
+}
+#botoes{
+    padding: 20px 0;
+}
+
+.barra-de-progresso{
+	border: 1px solid black;
+	height: 20px;
+	width: 90%;
+}
+.progresso{
+	background-color: green;
+	height: 100%;
 }
