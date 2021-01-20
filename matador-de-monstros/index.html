@@ -19,7 +19,7 @@
                         <div class="barra-de-progresso">
                             <div class="progresso" :style="{lifeJogador}"></div>
                         </div>
-                        <p>{{lifeJogador}}%</p>
+                        <p>{{this.lifeJogador}}%</p>
                     </div>
                     <div class=" col-6 ">
                         <h3 class="font-weight-light ">Monstro</h3>
@@ -27,7 +27,7 @@
                             <div class="progresso " :style="{lifeMonstro}"></div>
 
                         </div>
-                        <p>{{lifeMonstro}}%</p>
+                        <p>{{this.lifeMonstro}}%</p>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                 <button v-show="!newGame " @click="ataque() " class="btn btn-danger text-uppercase ">Ataque</button>
                 <button v-show="!newGame " @click="ataqueespecial() " class="btn btn-warning text-uppercase ">Ataque Especial</button>
                 <button v-show="!newGame " @click="curar() " class="btn btn-success text-uppercase ">Curar</button>
-                <button v-show="!newGame " @click="newGame=! newGame " class="btn btn-secondary text-uppercase ">Desistir</button>
+                <button v-show="!newGame " @click="newGame=! newGame, desistir() " class="btn btn-secondary text-uppercase ">Desistir</button>
             </div>
             <!-- Fim do Botões -->
             <!-- Inicio do Historico -->

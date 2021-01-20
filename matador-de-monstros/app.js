@@ -4,7 +4,7 @@ new Vue({
         newGame: true,
         lifeJogador: 100,
         lifeMonstro: 100,
-        
+
     },
     methods: {
         ataque() {
@@ -21,14 +21,13 @@ new Vue({
         },
         curar() {
             let curarjogador = Math.round(10 * Math.random())
-            let atkmonstro = Math.round(10 * Math.random())
+            let atkjogador = Math.round(6 * Math.random())
             this.lifeJogador += curarjogador
-            this.lifeMonstro -= atkmonstro
+            this.lifeJogador -= atkjogador
         },
         desistir() {
-            let reset = 100
-            this.lifeJogador = reset
-            this.lifeMonstro = reset
+            this.lifeJogador = 100
+            this.lifeMonstro = 100
         }
     },
 })
