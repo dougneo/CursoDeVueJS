@@ -1,8 +1,14 @@
 #barra,
+#resultado,
 #botoes,
 #historico {
-    margin: 20px 0px;
-    border: 1px solid red;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    text-align: -webkit-center;
+}
+.container{
     text-align: center;
     text-align: -webkit-center;
 }
@@ -19,6 +25,7 @@ h3 {
 
 #botoes {
     padding: 20px 0;
+    justify-content: center;
 }
 
 .barra-de-progresso {
@@ -33,6 +40,15 @@ h3 {
     float: left;
 }
 
+.danger{
+    background-color: red;
+}
+
 p {
     clear: both;
+}
+
+#resultado{
+    font-size: 1.3rem;
+    font-weight: 600;
 }

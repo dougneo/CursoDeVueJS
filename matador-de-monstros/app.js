@@ -5,6 +5,14 @@ new Vue({
         lifeJogador: 100,
         lifeMonstro: 100,
 
+
+
+    },
+
+    computed: {
+        hasResult() {
+            return this.lifeJogador <= 0 || this.lifeMonstro <= 0
+        }
     },
     methods: {
         ataque() {
