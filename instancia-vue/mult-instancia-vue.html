@@ -1,0 +1,26 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script src="https://unpkg.com/vue"></script>
+
+<div id="app1">
+    {{ titulo1}}
+</div>
+
+<div id="app2">
+    {{ titulo2}}
+</div>
+
+<script>
+    new Vue({
+        el:'#app1',
+        data:{
+            titulo1: 'Teste 1'
+        }
+    })
+
+    new Vue({
+        el:'#app2',
+        data:{
+            titulo2: 'Teste 2'
+        }
+    })
+</script>
